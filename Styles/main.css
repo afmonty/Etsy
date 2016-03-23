@@ -1,0 +1,30 @@
+body{     
+	background-color: #F5F5F1;
+	clear: both;
+}
+form{
+	clear: both;
+}
+.navbar-left{
+	height: 30em;
+	width: 20em;
+	background-color: white;
+}
+.displayDiv{
+	
+	display: inline-block;
+	float: right;
+}
+.displayDiv div{
+	background-color: white;
+	width: 11em;
+	
+	display: inline-block;
+	margin: 1em 1em 1em 1em;
+}
+img{
+	float: left;
+}
+span{
+	font-size: 8pt;
+}
