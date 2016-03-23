@@ -1,24 +1,31 @@
 body{     
 	background-color: #F5F5F1;
-	clear: both;
 }
 form{
-	clear: both;
+	overflow: hidden;
+	display: inline-block;
+}
+header{
+	background-color: white;
+}
+header>img{
+	height: 5em;
+	width: 5em;
 }
 .navbar-left{
 	height: 30em;
-	width: 20em;
+	width: 25%;
 	background-color: white;
+
 }
 .displayDiv{
-	
 	display: inline-block;
 	float: right;
+	margin-left: 25%;
 }
 .displayDiv div{
 	background-color: white;
 	width: 11em;
-	
 	display: inline-block;
 	margin: 1em 1em 1em 1em;
 }

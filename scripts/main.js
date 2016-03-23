@@ -11,17 +11,19 @@ var etsydata = $.ajax({
 		// 	[etsydata].indexOf("index", "title", "price");
 		// 	console.log(datalist);
 		data.results.forEach(function(listing){
-			var title = listing.title;
+			var title = [listing.title];
+			//var shortTitle = title.substr(0,17) + '...';
 			var image = listing.Images[0].url_170x135;
 			var desc = listing.description;
 			var price = listing.price;
+			//var shop = listing.Shop.shop_name;
 
 			$( ".displayDiv" ).append
   			 ("<div>" + "<img src ='"+image+"'/>" 
   			 	+ "<span>" + title  + "</span>" + "<span>" 
   			 	+price+ "</span>" + "</div>");
 
-  			//console.log(listing.title);
+  			console.log(listing.shop);
 		})
 	}
 });
