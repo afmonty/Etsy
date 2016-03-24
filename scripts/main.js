@@ -11,26 +11,28 @@ var etsydata = $.ajax({
 		// 	[etsydata].indexOf("index", "title", "price");
 		// 	console.log(datalist);
 		data.results.forEach(function(listing){
-			var title = [listing.title];
-			//var shortTitle = title.substr(0,17) + '...';
+			var title = listing.title;
+			var shortTitle = title.substr(0,30) + '...';
 			var image = listing.Images[0].url_170x135;
 			var desc = listing.description;
+			var shortDesc = desc.substr(0, 15) + "...";
 			var price = listing.price;
+			var url = listing.url;
 			//var shop = listing.Shop.shop_name;
 
 			$( ".displayDiv" ).append
-  			 ("<div>" + "<img src ='"+image+"'/>" 
-  			 	+ "<span>" + title  + "</span>" + "<span>" 
-  			 	+price+ "</span>" + "</div>");
+  			 ("<div>" + "<a href ="+url+"/>" + "<img src ='"+image+"'/>" 
+  			 	+ "<span>" + shortTitle  + "</span>" + "<p>" 
+  			 	+ "$" +price+ "</p>" + "</div>");
 
-  			console.log(listing.shop);
+  			//console.log(shop);
 		})
 	}
 });
 
 
 
-
+//<a></a>$(,{href:listing.shop.url, class:  "Seller"}).html(listing.Shop,shop_name);
 
 
  

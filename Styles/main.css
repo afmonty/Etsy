@@ -1,37 +1,54 @@
 body{     
 	background-color: #F5F5F1;
+	
 }
 form{
+	clear: both;
 	overflow: hidden;
-	display: inline-block;
+	align-content: center;
 }
 header{
 	background-color: white;
+	margin-bottom: 1em;
 }
-header>img{
+header img{
 	height: 5em;
 	width: 5em;
 }
 .navbar-left{
-	height: 30em;
-	width: 25%;
+	float: left;
+	clear:both;
+	height: 20em;
+	width: 10em;
 	background-color: white;
-
+	margin: 0 2em 2em 7em;
 }
 .displayDiv{
+	box-sizing: border-box;
 	display: inline-block;
-	float: right;
-	margin-left: 25%;
+	margin: 0;
+	width: 60%;
 }
 .displayDiv div{
 	background-color: white;
-	width: 11em;
 	display: inline-block;
 	margin: 1em 1em 1em 1em;
+	border: 1px inset;
 }
-img{
+.displayDiv img{
+	height: 180px;
+	width: 228px;
+}
+/*img{
 	float: left;
-}
+}*/
 span{
+	display: block;
 	font-size: 8pt;
+	font-style: sans-serif;
+}
+p {
+	float: right;
+	font-size: 8pt;
+	font-style: sans-serif;
 }
