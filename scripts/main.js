@@ -19,9 +19,10 @@ var etsydata = $.ajax({
 			var price = listing.price;
 			var url = listing.url;
 			//var shop = listing.Shop.shop_name;
+			//I should separate this out
 
 			$( ".displayDiv" ).append
-  			 ("<div>" + "<a href ="+url+"/>" + "<img src ='"+image+"'/>" 
+  			 ("<div>" + "<a href ='"+url+"'/>" + "<img src ='"+image+"'/>" 
   			 	+ "<span>" + shortTitle  + "</span>" + "<p>" 
   			 	+ "$" +price+ "</p>" + "</div>");
 
@@ -30,9 +31,6 @@ var etsydata = $.ajax({
 	}
 });
 
-
-
-//<a></a>$(,{href:listing.shop.url, class:  "Seller"}).html(listing.Shop,shop_name);
 
 
  

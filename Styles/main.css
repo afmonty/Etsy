@@ -1,6 +1,6 @@
 body{     
 	background-color: #F5F5F1;
-	
+	font-family: "Graphik web";
 }
 form{
 	clear: both;
@@ -39,16 +39,11 @@ header img{
 	height: 180px;
 	width: 228px;
 }
-/*img{
-	float: left;
-}*/
 span{
 	display: block;
 	font-size: 8pt;
-	font-style: sans-serif;
 }
 p {
 	float: right;
 	font-size: 8pt;
-	font-style: sans-serif;
 }
